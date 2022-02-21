@@ -1,0 +1,20 @@
+# WRITE A PROGRAM TO FIND THE SUMMATION OF ALL THE ODD NUMBERS BETWEEN 0 TO 10,000? WRITE PYTHON CODE TO IMPLEMENT
+import numpy as np
+
+MY_SUM_METHOD_ONE = 0
+MY_SUM_METHOD_TWO = 0
+MY_SUM_METHOD_THREE = 0
+
+print("METHOD ONE SOLUTION")
+for i in range(0, 10001):
+    if i%2 == 1:
+        print(i)
+        MY_SUM_METHOD_ONE = MY_SUM_METHOD_ONE + i
+
+print("METHOD TWO SOLUTION")
+for i in range(0, 10001, 2):
+    print(i)
+    MY_SUM_METHOD_TWO = MY_SUM_METHOD_TWO + i
+
+print("METHOD THREE SOLUTION")
+MY_SUM_METHOD_THREE = np.sum(range(1, 10001, 2))
